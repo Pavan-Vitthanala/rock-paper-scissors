@@ -124,37 +124,37 @@ function playGame(playerMove) {
 
   if (playerMove === 'scissors') {
     if (computerMove === 'rock') {
-      result = 'MG.';
+      result = 'You lose.';
     } else if (computerMove === 'paper') {
-      result = 'Aaah Peekinav le.';
+      result = 'You win.';
     } else if (computerMove === 'scissors') {
-      result = 'Chi Chi Chi.';
+      result = 'Tie.';
     }
 
   } else if (playerMove === 'paper') {
     if (computerMove === 'rock') {
-      result = 'Aaah Peekinav le.';
+      result = 'You win.';
     } else if (computerMove === 'paper') {
-      result = 'Chi Chi Chi.';
+      result = 'Tie.';
     } else if (computerMove === 'scissors') {
-      result = 'MG.';
+      result = 'You lose.';
     }
     
   } else if (playerMove === 'rock') {
     if (computerMove === 'rock') {
-      result = 'Chi Chi Chi.';
+      result = 'Tie.';
     } else if (computerMove === 'paper') {
-      result = 'MG.';
+      result = 'You lose.';
     } else if (computerMove === 'scissors') {
-      result = 'Aaah Peekinav le.';
+      result = 'You win.';
     }
   }
 
-  if (result === 'Aaah Peekinav le.') {
+  if (result === 'You win.') {
     score.wins += 1;
-  } else if (result === 'MG.') {
+  } else if (result === 'You lose.') {
     score.losses += 1;
-  } else if (result === 'Chi Chi Chi.') {
+  } else if (result === 'Tie.') {
     score.ties += 1;
   }
 
